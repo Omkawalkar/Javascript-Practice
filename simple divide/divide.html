@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Divide</title>
+  <link rel="stylesheet" href="divide.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="hero">
+        <h1>Simple Divide</h1>
+        <p>Enter two values and click divide to get the result.</p>
+      </div>
+
+      <form class="calculator">
+        <label>
+          First value
+          <input type="number" placeholder="Enter first number" id="firstnumber" />
+        </label>
+
+        <label>
+          Second value
+          <input type="number" placeholder="Enter second number" id="secondnumber"/>
+        </label>
+
+        <button type="button" id="action-button">Divide</button>
+      </form>
+
+      <div class="output-card">
+        <span class="output-label">Result</span>
+        <strong class="output-value">00</strong>
+      </div>
+    </section>
+  </main>
+  <script src="divide.js"></script>
+</body>
+</html>
