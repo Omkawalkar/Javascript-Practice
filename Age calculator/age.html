@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Checker</title>
+  <link rel="stylesheet" href="age.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="card-header">
+        <h1>Age Checker</h1>
+        <p>Enter your date of birth to see your real age.</p>
+      </div>
+
+      <form class="age-form">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" />
+
+        <button type="button" id="check-button">Check</button>
+      </form>
+
+      <div class="result-card">
+        <p>Your age is</p>
+        <span id="result-value">00 years</span>
+      </div>
+    </section>
+  </main>
+  <script src="age.js"></script>
+</body>
+</html>
