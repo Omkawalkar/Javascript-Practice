@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
+  <meta name="description" content="Simple two-number calculator (UI only)" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="card-head">
+        <h1>Simple Calculator</h1>
+        <p class="subtitle">Enter two numbers and choose an operation</p>
+      </header>
+
+      <form class="calc">
+        <div class="inputs">
+          <label class="field">
+            <span>First number</span>
+            <input type="number" inputmode="numeric" class="input" id="FirstInput" placeholder="0" />
+          </label>
+
+          <label class="field">
+            <span>Second number</span>
+            <input type="number" inputmode="numeric" class="input" id="SecoundInput" placeholder="0" />
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="btn btn-primary" id="add" >Add</button>
+          <button type="button" class="btn btn-secondary" id="sub"  >Subtract</button>
+          <button type="button" class="btn btn-tertiary" id="multi" >Multiply</button>
+          <button type="button" class="btn btn-quaternary" id="div" >Divide</button>
+          <button type="reset" class="btn btn-reset" id="reset" >Reset</button>
+        </div>
+      </form>
+
+      <div class="result">
+        <div class="result-label">Result</div>
+        <div class="result-value">00</div>
+      </div>
+    </section>
+  </main>
+  <script src="calculator.js"></script>
+</body>
+</html>
