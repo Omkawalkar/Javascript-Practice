@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #0b081a;
+  color: #f7f7ff;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(193, 51, 131, 0.35),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(224, 84, 84, 0.3),
+      transparent 24%
+    ),
+    linear-gradient(135deg, #443199 0%, #792ca2 55%, #c13383 100%);
+}
+
+.page-shell {
+  width: min(100%, 520px);
+}
+
+.calculator-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  padding: 2.2rem;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 35px 80px rgba(16, 8, 64, 0.35);
+}
+
+.card-header .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4d8ff;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-header h1 {
+  margin: 1rem 0 0.35rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.05;
+}
+
+.card-header p {
+  margin: 0;
+  color: rgba(247, 247, 255, 0.78);
+  max-width: 40rem;
+}
+
+.calculator-form {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.15rem;
+}
+
+.calculator-form label,
+.result-field {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.calculator-form label span,
+.result-field span {
+  font-size: 0.95rem;
+  color: rgba(247, 247, 255, 0.8);
+}
+
+.calculator-form input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 1rem 1.1rem;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.calculator-form input:focus {
+  border-color: rgba(193, 51, 131, 0.9);
+  transform: translateY(-1px);
+}
+
+.result-field {
+  padding: 1.15rem 1.2rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.result-field output {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #c13383, #e05454);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(224, 84, 84, 0.24);
+}
+
+.hint-row {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hint-row div {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.hint-row strong {
+  color: #fff;
+}
+
+.hint-row p {
+  margin: 0;
+  color: rgba(247, 247, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 420px) {
+  .calculator-card {
+    padding: 1.6rem;
+  }
+  .card-header h1 {
+    font-size: 2.2rem;
+  }
+}
