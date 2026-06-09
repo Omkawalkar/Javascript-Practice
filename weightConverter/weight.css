@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #39B1D1;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.SecoundContainer{
+    justify-content: center;
+    text-align: center;
+margin-top: 10rem;
+}
+
+.Input-Pound{
+    
+    margin: 5rem;
+    
+
+}
+
+#pound{
+    padding: 30px 80px;
+    background-color:#F6850C ;
+    font-size: 20px ;
+    
+}
+
+#convert{
+
+    padding: 20px 70px;
+    border-radius: 5px;
+    border: none;
+    background-color:#D6FB61 ;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Output-Kilogram{
+    margin: 20px;
+}
+
+p , .Text {
+    font-size: 30px;
+}

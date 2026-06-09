@@ -15,12 +15,12 @@ const calculate = () => {
         return;
     }
 
-    
-   const interest = (amt * intr * month) / (100 * 12);
-const total = amt + interest;
-const monthlyPayment = total / month;
 
-resultValue.textContent = monthlyPayment.toFixed(2);
+    const interest = (amt * intr * month) / (100 * 12);
+    const total = amt + interest;
+    const monthlyPayment = total / month;
+
+    resultValue.textContent = monthlyPayment.toFixed(2);
 };
 
 button.addEventListener("click", calculate);

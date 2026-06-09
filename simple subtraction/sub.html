@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Subtraction</title>
+  <link rel="stylesheet" href="sub.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="hero">
+        <h1>Simple Subtract</h1>
+        <p>Enter two values and click subtract to get the result.</p>
+      </div>
+
+      <form class="calculator">
+        <label>
+          First value
+          <input type="number" placeholder="Enter first number" id="firstnumber" />
+        </label>
+
+        <label>
+          Second value
+          <input type="number" placeholder="Enter second number" id="secoundnumber"/>
+        </label>
+
+        <button type="button" id="action-button">Subtract</button>
+      </form>
+
+      <div class="output-card">
+        <span class="output-label">Result</span>
+        <strong class="output-value">00</strong>
+      </div>
+    </section>
+  </main>
+  <script src="sub.js"></script>
+</body>
+</html>
