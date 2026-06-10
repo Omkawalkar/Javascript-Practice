@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+    <div class="container">
+        <div class="feedback-card">
+            <h1>Feedback UI</h1>
+            <p class="subtitle">How was your experience?</p>
+            
+            <div class="emoji-container">
+                <div class="emoji-option">
+                    <div class="emoji unhappy" id="unhappy">
+                        <img src="image/Sad Face Emoji.png" alt="Unhappy" class="emoji-img">
+                    </div>
+                    <p class="emoji-label">Unhappy</p>
+                </div>
+
+                <div class="emoji-option">
+                    <div class="emoji neutral" id="neutral">
+                        <img src="image/Neutral Face Emoji.png" alt="Neutral" class="emoji-img">
+                    </div>
+                    <p class="emoji-label">Neutral</p>
+                </div>
+
+                <div class="emoji-option">
+                    <div class="emoji satisfied" id="satisfied">
+                        <img src="image/Happy Emoji [Download iPhone Emojis].png" alt="Satisfied" class="emoji-img">
+                    </div>
+                    <p class="emoji-label">Satisfied</p>
+                </div>
+            </div>
+
+            <button class="send-btn">Send Review</button>
+            <p class="review-message">Your review was Happy</p>
+        </div>
+    </div>
+    <script src="rating.js"></script>
+</body>
+</html>
