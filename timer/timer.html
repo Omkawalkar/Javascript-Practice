@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="timer.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <header class="hero">
+                <h1>Countdown Timer</h1>
+                <p class="lead">Set seconds, then press
+                    <strong>Start</strong>.</p>
+            </header>
+
+            <main class="container">
+                <section class="card">
+                    <form class="controls" onsubmit="return false;">
+                        <label class="label">Enter time</label>
+                        <div class="input-wrap time-inputs">
+                            <input id="hours" type="number" min="0" placeholder="Hours" />
+                            <input id="minutes" type="number" min="0" max="59" placeholder="Minutes" />
+                            <input id="seconds" type="number" min="0" max="59" placeholder="Seconds" />
+                            <button class="btn btn-sm btn-accent" id="set-timer">Set New Timer</button>
+                        </div>
+                    </form>
+
+                    <div class="display" id="display">00:00:00</div>
+
+                    <div class="btn-row">
+                        <button class="btn btn-primary" id="start">Start</button>
+                        <button class="btn" id="pause">Pause</button>
+                        <button class="btn btn-secondary" id="resume" disabled>Resume</button>
+                        <button class="btn btn-ghost" id="reset">Reset</button>
+                    </div>
+
+                    
+                </section>
+            </main>
+
+            
+        </div>
+        <Script src="timer.js"></Script>
+    </body>
+    
+</html>
